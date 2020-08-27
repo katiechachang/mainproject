@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Kalam&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cloudnine.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Experience</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="external.js"></script>
+    <style>
+        h1{
+            animation-name: title;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            transition-duration: 2s;
+        }
+        h1:hover{
+            transform: translate(100px, 0px);
+        }
+        @keyframes title {
+            0% {color:rgb(93, 175, 185);}
+            50% {color:rgb(72, 122, 92);}
+            100% {color:rgb(93, 175, 185);}
+        }
+        .submitting{
+            width:30%;
+            border: none;
+            border-radius: 4px;
+            background-color:rgb(131, 194, 155);
+            color:white;
+            padding:1em 1em;
+            align-self: center;
+            transition-duration: 1s;
+        }
+        .submitting:hover{
+            color:rgb(59, 107, 71);
+            cursor: pointer;
+        }
+        select, #names,#email, #opinions {
+         width: 100%;
+         padding: 16px 20px;
+          border: none;
+          border-radius: 4px;
+          background-color: #e7e7e7;
+}
+       form{
+           padding:2em;
+       }
+#opinions{
+    height:20%;
+}
+#button:hover{
+    background-color: rgb(206, 209, 209);
+}
+legend{
+    font-family: 'Assistant', sans-serif;
+}
+.rows, fieldset{
+    padding-bottom:2em;
+}
+    </style>
+</head>
+<body>
+    <nav style="margin-bottom: 0;">
+        <ul>
+        <li class="nav"><img src="icon1.png" alt="logo" class="icon" style="width:100px;"></li>
+        <li class="nav" id="name" style="color:rgb(239, 251, 255);font-family: 'Chelsea Market', cursive;">CloudNineCare</li>
+        <li class="nav"><a id="nav" href="index.html">Home</a></li></li> 
+        <li class="nav"><a id="nav" href="team.html">Meet Our Team</a></li>
+        <li class="nav"><a id="nav"href="fqas.html">FAQs</a></li>
+        <li class="nav"><a id="nav" href="experience.html">Your Experience</a></li>
+        </ul>
+    </nav>
+    <nav aria-label="breadcrumb" style="background-color: white;">
+    <ol class="navigation" ></ol>
+    <li style="display:inline;text-decoration:none;list-style-type: inline;"class="breadcrumb-item"><a href="index.html">Home/</a></li>
+    <li style="display:inline;text-decoration:none;list-style-type: inline;color:black;"class="breadcrumb-item active" aria-current="page">Your Experience</li>
+    </nav>  
+    <main>
+        <h1 class="jumbotron">Your Experience</h1>
+        <div>
+            <h2 style="font-size: 1.5em;">We want your opinions about the experience with our caretakers</h2>
+            <p>If you have questions, find the form in the footer</p>
+        </div>
+        <form name="forms"action="experience.html" onsubmit="return(done());">
+            <fieldset><legend>Review For Clients</legend>
+                <div class="rows" style="width:100%;">
+                    <label for="Names">Name:<br><input type="text" name="names" id="names" placeholder="Jane Doe"></label>
+                </div>
+                <div class="rows">
+                    <label for="email">Email:<br><input type="text" name="email" id="email" placeholder="janedoe@cloud9cares.com"></label>
+                </div>
+                <div class="rows">
+                    <select name="caretaker" id="caretaker">
+                        <option value="none">...Pick Your Caretaker</option>
+                        <option value="Reb">Rebecca Green</option>
+                        <option value="mark">Mark Wong</option>
+                        <option value="Taya">Taya Reyes</option>
+                    </select>
+                </div>
+                <div class="rows">
+                   <label for="opinions">Opinions:<br><textarea name="opinions" id="opinions" cols="30" rows="10"></textarea></label>
+                </div>
+                <div class="rows" style="align-content: center;"><input type="submit" class="submitting"></div>
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <p style="font-size :2em; padding-left:1em; text-align: center;">CloudNineCare</p>
+        <div class="credit">
+        <ul> 
+            <li style="font-size:1.4em; margin-bottom: 1em;">Credits to:</li>
+            <li><a href="https://www.agingcare.com/">Aging Care</a></li>
+            <li><a href="caregiver.org">Family CareGiver Alliance</a></li>
+            <li><a href="name-generator.uk">Masterpiece Generator</a></li>
+            <li><a href="w3schools.com">W3schools</a></li>
+            <li><a href="ej2.syncfusion.com">Syncfusion</a></li>
+            <li><a href="getbootstrap.com">Bootstrap</a></li>
+            <li><a href="jquery.com">Jquery</a></li>
+            <li><a href="unsplash.com">Unsplash</a></li>
+        </ul>
+        </div>
+    <div class="stuff">
+        <ul style="float:left;">
+            <li style="font-size: 1.4em; margin-bottom: 1em;">CloudNineCare Help</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fqas.html">Frequently Asked Questions</a></li>
+            <li><a href="team.html">Meet Our team</a></li>
+            <li><a href=>Your Experience</a></li>
+            <li>Contact Information:</li>
+            <li>Executive Manager: Raphael Boss, raphael_boss@cloud9cares.com</li>
+            <li>Assistant Manager: Jane Doe, janedoe01134@cloud9cares.com</li>
+            <li>Owner: Oliva Madison Loverson, Liv_Mad_Love@cloud9cares.com</li>
+            <li>See "Meet Our Team" to get to know the caretakers who help</li>
+        </ul>
+        </div>
+        <div id="form">
+            <form name="form" action="fqas.html" onsubmit="return(check());">
+                <fieldset><legend>Questions & Comments</legend>
+                <div class="row">
+                    <p class="p">When you click submit, you will be redirected to the Q&A page</p>
+                </div>
+                <div class="row">
+                    <label for="fname">First Name: <input type="text" name="fname" id="fname" placeholder="Enter First Name"></label>
+                </div>
+                   <div class="row"> <label for="lname">Last Name: <input type="text" id="lname" name="lname" placeholder="Enter Last Name"></label>
+                   </div>
+                    <div class="row"><label for="comment" style="width:100%;">Comment/Question:<br><textarea type="text" id="comment" name="comment" placeholder="Tell us about it..."></textarea></label>
+                        <div class="form-group">
+                            <label for="formControlRange" id="rangelabel">How happy are you with this website?<br></label>
+                            <label for="formControlRange">1<input type="range" min="1" max="10" value="5"class="slider" id="formControlRange">10</label>
+                          </div>
+                        <div class="row">
+                    <input class="submit" type="submit"id="button">
+                </div>
+               </div>
+              </fieldset>
+             </form>
+            </div>
+        <p class="pa">Katie Chang 2020</p>
+    </footer>
+</body>
+</html>

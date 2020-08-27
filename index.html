@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Kalam&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cloudnine.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOUDNINECARE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="external.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".submit").on({
+    mouseenter: function(){
+      $(this).css("background-color", "#B0D9DC");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "#BDEAEE");
+    }, 
+    click: function(){
+      $(this).css("background-color", "#DAF0F2");
+    } 
+  });
+});
+    </script>
+    <style>
+        form{
+            float:left;
+            margin-left:0em;
+        }
+    #formControlRange {
+        background-color: rgb(230, 230, 230);
+        color: teal;
+    }
+    .slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #d3d3d3;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  height:.5em;
+  width:50%;
+  margin:1em;
+}
+.slider:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+ .slider::-moz-range-thumb{
+    background:rgb(204, 207, 204);
+ }
+ .row{
+     padding-bottom:.5em;
+ }
+
+    </style>
+</head>
+<body>
+    <nav style="margin-bottom: 1em;">
+        <ul>
+        <li class="nav"><img src="icon1.png" alt="logo" class="icon" style="width:100px;"></li>
+        <li class="nav" id="name" style="color:rgb(239, 251, 255);font-family: 'Chelsea Market', cursive;">CloudNineCare</li>
+        <li class="nav"><a id="nav" href="index.html">Home</a></li></li> 
+        <li class="nav"><a id="nav" href="team.html">Meet Our Team</a></li>
+        <li class="nav"><a id="nav"href="fqas.html">FAQs</a></li>
+        <li class="nav"><a id="nav" href="experience.html">Your Experience</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img id="mainpic"src="caretaker1.jpg" alt="mainpic">
+        <div class="article">
+            <h1>About Us</h1>
+            <p>Here at CloudNineCare, we believe in creating happiness in the last moments of our clients lives. No one deserves to be lonely in the last difficult years of life, which is where CloudNine Care help comes from. Our caretakers are responsible for looking after assets, individuals, or properties at the request of an employer. They care for buildings and grounds of specific properties and usually live on the premises in order to provide better surveillance. These professionals may work at schools, ranches, private residences, farms, hotels, churches, bed and breakfast inns, among other buildings. They work for long or short terms according to specific needs of their clients.</p>
+        </div>
+        <div class="article">
+            <h1>Hours Of Service/Working Hours</h1>
+            <p>We at CloudNineCare try to maintain a constant contact line for any hour of the day, because you never know when something drastically important may occur. We have an active number [(888)9CLOUDS] that you can contact and we want to help you. For our office hours though...</p>
+            <ul>
+                <li style="text-decoration: solid;">Monday-Thursday: 8AM-11PM</li>
+                <li style="text-decoration:solid;">Friday-Sunday: 6AM-12PM</li>
+            </ul>
+           <p>We welcome all to our many business center. Check out "Your Experience" (coming soon) to find more infomation on what the closest store is near you and how to book an appointment. Our offices are designed to create a calming effect over the clients, so please enjoy the atmosphere when you visit! Our HQ is in San Diego, California, but we are eager to expand even more. To Donate, look for our slogan. Thanks! </p>
+        </div>
+    </main>
+
+    <footer>
+        <p style="font-size :2em; padding-left:1em; text-align: center;">CloudNineCare</p>
+        <div class="credit">
+        <ul> 
+            <li style="font-size:1.4em; margin-bottom: 1em;">Credits to:</li>
+            <li><a href="https://www.agingcare.com/">Aging Care</a></li>
+            <li><a href="caregiver.org">Family CareGiver Alliance</a></li>
+            <li><a href="name-generator.uk">Masterpiece Generator</a></li>
+            <li><a href="w3schools.com">W3schools</a></li>
+            <li><a href="ej2.syncfusion.com">Syncfusion</a></li>
+            <li><a href="getbootstrap.com">Bootstrap</a></li>
+            <li><a href="jquery.com">Jquery</a></li>
+            <li><a href="unsplash.com">Unsplash</a></li>
+        </ul>
+        </div>
+    <div class="stuff">
+        <ul style="float:left;">
+            <li style="font-size: 1.4em; margin-bottom: 1em;">CloudNineCare Help</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fqas.html">Frequently Asked Questions</a></li>
+            <li><a href="team.html">Meet Our team</a></li>
+            <li><a href=>Your Experience</a></li>
+            <li>Contact Information:</li>
+            <li>Executive Manager: Raphael Boss, raphael_boss@cloud9cares.com</li>
+            <li>Assistant Manager: Jane Doe, janedoe01134@cloud9cares.com</li>
+            <li>Owner: Oliva Madison Loverson, Liv_Mad_Love@cloud9cares.com</li>
+            <li>See "Meet Our Team" to get to know the caretakers who help</li>
+        </ul>
+        </div>
+        <div id="form">
+        <form name="form" action="fqas.html" onsubmit="return(check());">
+            <fieldset><legend>Questions & Comments</legend>
+            <div class="row">
+                <p class="p">When you click submit, you will be redirected to the Q&A page</p>
+            </div>
+            <div class="row">
+                <label for="fname">First Name: <input type="text" name="fname" id="fname" placeholder="Enter First Name"></label>
+            </div>
+               <div class="row"> <label for="lname">Last Name: <input type="text" id="lname" name="lname" placeholder="Enter Last Name"></label>
+               </div>
+                <div class="row"><label for="comment" style="width:100%;">Comment/Question:<br><textarea type="text" id="comment" name="comment" placeholder="Tell us about it..."></textarea></label>
+                    <div class="form-group">
+                        <label for="formControlRange" id="rangelabel">How happy are you with this website?<br></label>
+                        <label for="formControlRange">1<input type="range" min="1" max="10" value="5"class="slider" id="formControlRange">10</label>
+                      </div>
+                    <div class="row">
+                <input class="submit" type="submit"id="button">
+            </div>
+           </div>
+          </fieldset>
+         </form>
+        </div>
+        <div class="pa">
+            <p style="width:100%;padding-bottom:1em;"><br>Katie Chang 2020</p>
+        </div>
+    </footer>
+</body>
+</html>

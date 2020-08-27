@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Kalam&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cloudnine.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="external.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".submit").on({
+    mouseenter: function(){
+      $(this).css("background-color", "#B0D9DC");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "#BDEAEE");
+    }, 
+    click: function(){
+      $(this).css("background-color", "#DAF0F2");
+    }  
+  });
+});
+
+</script>
+    <style>
+        h1,h2, p{
+            margin-left: 1em;
+        }
+        h1{
+            font-family: 'Shadows Into Light', cursive;
+        }
+        #thoughts{
+            margin-left:1em;
+            height:4em;
+        }
+         .subm{
+               width:50%;
+               height:1.8em;
+               background-color: rgb(168, 204, 168);
+          }
+          .subm:hover{
+              background-color: rgb(125, 184, 125);
+          }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li class="nav"><img src="Icon1.png" alt="logo" class="icon" style="width:100px;"></li>
+        <li class="nav"style="color:rgb(239, 251, 255);font-family: 'Chelsea Market', cursive;" id="name">CloudNineCare</li>
+        <li class="nav"><a id="nav"href="index.html">Home </a></li></li> 
+        <li class="nav"><a id="nav" href="team.html">Meet Our Team</a></li>
+        <li class="nav"><a id="nav"href="fqas.html">FAQs</a></li>
+        <li class="nav"><a id="nav" href="experience.html">Your Experience</a></li>
+        </ul>
+    </nav>
+    <nav aria-label="breadcrumb" style="background-color: white;">
+    <ol class="navigation" ></ol>
+    <li style="display:inline;text-decoration:none;list-style-type: inline;"class="breadcrumb-item"><a href="index.html">Home/</a></li>
+    <li style="display:inline;text-decoration:none;list-style-type: inline;color:black;"class="breadcrumb-item active" aria-current="page">FAQs</li>
+    </nav> 
+    <main>
+          <div class="container"><img src="couple.jpg" alt="couple" class="fqaimg" style="float:right;"></div>
+          <div class="jumbotron"><h1>Caregiver Frequently Asked Questions</h1>
+         </div>
+          <article>
+          <div><h2>Can CNC help me find a job in caretaking?</h2>
+          <p>Sorry, but CloudNine Care is not currently looking for any extra caretakers, but it might help to post your credentials as a caregiver seeking work to one of the managers of the company. You can read more about what it is we do on our <a href="index.html">'about us' page</a> and what our team is like, as well as their contact information.</p>
+         </div>
+          <div><h2>Can I get paid to care for a family member?</h2>
+          <p>That's what we're here for! You don't need to exert yourself by placing full responsibility of your parents unto your shoulders. We are here to relieve the burden, even if it's just a little, to help you continue with your life. If you do want to take care of your elderly parents to make ends meet, whilst still pursuing a career in homecare taking, we cannot offer any salaries or money to support you. You will have to sign up to our program as one of our full-working staff to get a paycheck. There are other programs out there that offer what you might want, but CloudNine Care does not. There are various elderly guidelines (which varies from each state- <a href="https://www.healthcare.gov/medicaid-chip-program-names/">check to see yours</a>) that one must follow, so good luck!</p>
+        </div>
+        <div><h2>Help! I need a break! How can I find respite care?</h2>
+            <p>Caring for yourself is one of the most important things you can do as a caregiver. When your needs are taken care of, the person you care for will benefit too. Respite care provides family caregivers with temporary relief from day-to-day caregiving tasks, varying from a few hours to several weeks. Respite services can be provided through in-home care agencies, adult day services, facilities that allow short-term stays, individuals you hire directly or from friends and relatives willing to volunteer. Respite assistance is part of many caregiver support programs, including the Family Caregiver Support Program (FCSP) – available from your local department on aging.  In addition, many private or nonprofit organizations offer fee-for-service respite assistance, including in-home assistance, a short-term stay in an assisted living facility or nursing home, or adult day services. Volunteer respite services are also available in many communities to provide companionship, protective supervision and other assistance.            Don't wait until you are overwhelmed and exhausted or your health fails. Respite services, as well as support groups with other caregivers and help from your family and friends, can be invaluable.  Reaching out for help when you need it is an important part of the job.</p>
+        </div>
+        <div><h2>What bothers you the most in caretaking? And how do you get past it?</h2>
+            <p>Hey, this is Mark Wong. I'm one of the head caretakers in CloudNine Care. What's the biggest problem I face everday in caretaking? I would sadly say is the fact that some elderly I care for, expecially those with Alzheimers, think the world bends to their every will. It's understandable. Think of all the pain and sadness they must be feeling, either through a disease leaving them bedridden or just getting old. Nothing can stop the inevitable from arriving, but here at CloundNine Care, we decided we want to make the last moments, no matter how frustrating and never-ending it may seem, be the best for those we take care of. And that's what drives us as a company, because all we want is our clients to be happy.</p>
+        </div>
+        </article> 
+        <p> Disclaimer: These Questions were based off of various caretaking sites, look at footer for references</p>   
+       <div id="form">
+        <form name="form" action="confirm.html" onsubmit="return(check());">
+               <div class="row">
+               <label for="thoughts"><input style="width:50%; height:2em;"type="text" id="thoughts"name="thoughts" placeholder="Any Last Thoughts?" required></label>
+            </div>
+            <div class="row">
+                <input class="subm"type="submit" name="submit" id="button" value="submit" style="margin:1em; border:none; color:white;">
+            </div>
+        </form> 
+    </div>   
+    </main>
+
+        <footer>
+            <p style="font-size :2em; padding-left:1em; text-align: center;">CloudNineCare</p>
+            <div class="credit">
+            <ul> 
+                <li style="font-size:1.4em; margin-bottom: 1em;">Credits to:</li>
+                <li><a href="https://www.agingcare.com/">Aging Care</a></li>
+                <li><a href="caregiver.org">Family CareGiver Alliance</a></li>
+                <li><a href="name-generator.uk">Masterpiece Generator</a></li>
+                <li><a href="w3schools.com">W3schools</a></li>
+                <li><a href="ej2.syncfusion.com">Syncfusion</a></li>
+                <li><a href="getbootstrap.com">Bootstrap</a></li>
+                <li><a href="jquery.com">Jquery</a></li>
+                <li><a href="unsplash.com">Unsplash</a></li>
+            </ul>
+            </div>
+        <div class="stuff">
+            <ul style="float:left; clear:right;">
+                <li style="font-size: 1.4em; margin-bottom: 1em;">CloudNineCare Help</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fqas.html">Frequently Asked Questions</a></li>
+                <li><a href="team.html">Meet Our team</a></li>
+                <li><a href=>Your Experience</a></li>
+                <li>Contact Information:</li>
+                <li>Executive Manager: Raphael Boss, raphael_boss@cloud9cares.com</li>
+                <li>Assistant Manager: Jane Doe, janedoe01134@cloud9cares.com</li>
+                <li>Owner: Oliva Madison Loverson, Liv_Mad_Love@cloud9cares.com</li>
+                <li>See "Meet Our Team" to get to know the caretakers who help</li>
+            </ul>
+            </div>
+             <br><p class="pa" style="width:100%;padding-bottom:4em;"><br>Katie Chang 2020</p>
+        </footer>
+</body>
+</html>

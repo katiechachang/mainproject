@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cloudnine.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Kalam&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <script src="external.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+     <style>
+      html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(136, 173, 161);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: rgb(76, 99, 90);
+}
+@media screen and (max-width: 800px) {
+    .column {
+        width:80%;
+        align-self: center;
+        height:70%;
+
+    }
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    height:100%;
+    align-content: center;
+  }
+}
+     </style>
+</head>
+<body>
+    <nav style="margin-bottom: 0;">
+        <ul>
+        <li class="nav"><img src="icon1.png" alt="logo" class="icon" style="width:100px;"></li>
+        <li class="nav" id="name" style="color:rgb(239, 251, 255);font-family: 'Chelsea Market', cursive;">CloudNineCare</li>
+        <li class="nav"><a id="nav" href="index.html">Home</a></li></li> 
+        <li class="nav"><a id="nav" href="team.html">Meet Our Team</a></li>
+        <li class="nav"><a id="nav"href="fqas.html">FAQs</a></li>
+        <li class="nav"><a id="nav" href="experience.html">Your Experience</a></li>
+        </ul>
+    </nav>
+    <nav aria-label="breadcrumb" style="background-color: white; padding:0;">
+    <ol class="navigation" ></ol>
+    <li style="display:inline;text-decoration:none;list-style-type: inline;"class="breadcrumb-item"><a href="index.html">Home/</a></li>
+    <li style="display:inline;text-decoration:none;list-style-type: inline;color:black;"class="breadcrumb-item active" aria-current="page">Meet Our Team</li>
+      </nav>
+    <main>
+        <h1 class="jumbotron" >Meet Our Team</h1>
+        <br>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="smilies.jpg" alt="Rebecca" style="width:100%">
+              <div class="container">
+                <h2>Rebecca Green</h2>
+                <p class="title">Caretaker  (specialized in AD)</p>
+                <p>Rebecca has been working for CloudNineCare for the past four years after earning her first bachelor degree at CAT (California Academic Technologics). Her passion for caring for others have inspired many of our employees, and her bubbly and friendly nature makes everyone feel comfortable. Filled with sunshine, Rebecca is the perfect caretaker for any home.</p>
+                <p>rbecca_green@cloud9cares.com</p>
+                <p><button class="button" onClick=return(copy())>Contact</button></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="mansmile.jpg" alt="Mark" style="width:100%">
+              <div class="container">
+                <h2>Mark Wong</h2>
+                <p class="title">Snr. Caretaker</p>
+                <p>Mark has worked for CloudNineCare from the start, by being part of the original group who had started the co. Mark has a selfless soul and sparks joy whenever he smiles. Earning a PhD in psychology at USU (United States Uni), Mark is beyond experienced to tune into the mental and physical well-being of his patients, so you're in good hands if you choose him to take care of those you love</p>
+                <p>markwongwong@cloud9cares.com</p>
+                <p><button class="button" onClick=return(copy())>Contact</button></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <img src="smiley.jpg" alt="Taya" style="width:100%">
+              <div class="container">
+                <h2>Taya Reyes</h2>
+                <p class="title">Jr. Caretaker</p>
+                <p>Fresh from college after earning a master in nursing at PNU (Philidelphia Nursing University), Taya is ready to spread the love she feels for people out into the world in her debut. Caretaking was the first dream job Taya ever wanted, and if you choose her, the joy and natural caretaking personality she possesses will be perfect for any clients that come her way. </p>
+                <p>taysreyes@cloud9cares.com</p>
+                <p><button class="button" onClick=return(copy())>Contact</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+<br>
+<div class="column">
+    <div class="card">
+      <img src="boss.jpg" alt="Raphael" style="width:100%">
+      <div class="container">
+        <h2>Raphael Boss</h2>
+        <p class="title">Exec. Manager</p>
+        <p>Raphael Boss is cool, collected, and a perfect fit for our company. Instead of other caretaking companies, Raphael sought out CloudNineCare because of our pursuit for safety and happiness in our clients. Raphael handles all the caretaker managers and have made the company more successful through his hard work and dedication to caring for others from the stands.</p>
+        <p>raphael_boss@cloud9cares.com</p>
+        <p><button class="button" onClick=return(copy())>Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="co-owners.jpg" alt="Olivia and Ross" style="width:100%">
+      <div class="container">
+        <h2>Olivia M. Loverson and Ross Loverson</h2>
+        <p class="title">CEO, CFO & Co-Founders</p>
+        <p>The idea of CloudNineCare was created when Olivia discovered she could never have children due to maternity problems. So, instead of pursuing an office job she despised, Olivia and her husband, Ross, decided to branch out into caretaking. Experienced in caretaking themselves, the Loversons started the company and worked day and night to get the co. off its feet.</p>
+        <p>Liv_Mad_Love@cloud9cares, rosslove@cloud9cares.com</p>
+        <p><button class="button" onClick=return(copy())>Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="cares.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Asst. Manager</p>
+        <p>John is a hard working individual who believes in the positives of the world. Nothing can get him down, and he uses this mindset to boost the spirits of the caretakers he manages. With a great relationship with Boss and the co-founders, John has proved how he helps the co. succeed through his driven personality over the three years he's been at CloudNineCare</p>
+        <p>thatjohndoe@cloud9cares.com</p>
+        <p><button class="button" onClick=return(copy())>Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer>
+        <p style="font-size :2em; padding-left:1em; text-align: center;">CloudNineCare</p>
+        <div class="credit">
+        <ul> 
+            <li style="font-size:1.4em; margin-bottom: 1em;">Credits to:</li>
+            <li><a href="https://www.agingcare.com/">Aging Care</a></li>
+            <li><a href="caregiver.org">Family CareGiver Alliance</a></li>
+            <li><a href="name-generator.uk">Masterpiece Generator</a></li>
+            <li><a href="w3schools.com">W3schools</a></li>
+            <li><a href="ej2.syncfusion.com">Syncfusion</a></li>
+            <li><a href="getbootstrap.com">Bootstrap</a></li>
+            <li><a href="jquery.com">Jquery</a></li>
+            <li><a href="unsplash.com">Unsplash</a></li>
+        </ul>
+        </div>
+    <div class="stuff">
+        <ul style="float:left;">
+            <li style="font-size: 1.4em; margin-bottom: 1em;">CloudNineCare Help</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fqas.html">Frequently Asked Questions</a></li>
+            <li><a href="team.html">Meet Our team</a></li>
+            <li><a href=>Your Experience</a></li>
+            <li>Contact Information:</li>
+            <li>Executive Manager: Raphael Boss, raphael_boss@cloud9cares.com</li>
+            <li>Assistant Manager: Jane Doe, janedoe01134@cloud9cares.com</li>
+            <li>Owner: Oliva Madison Loverson, Liv_Mad_Love@cloud9cares.com</li>
+            <li>See "Meet Our Team" to get to know the caretakers who help</li>
+        </ul>
+        </div>
+        <div id="form">
+        <form name="form" action="fqas.html" onsubmit="return(check());">
+            <fieldset><legend>Questions & Comments</legend>
+            <div class="row">
+                <p class="p">When you click submit, you will be redirected to the Q&A page</p>
+            </div>
+            <div class="row">
+                <label for="fname">First Name: <input type="text" name="fname" id="fname" placeholder="Enter First Name"></label>
+            </div>
+               <div class="row"> <label for="lname">First Name: <input type="text" id="lname" name="lname" placeholder="Enter Last Name"></label>
+               </div>
+                <div class="row"><label for="comment" style="width:100%;">Comment/Question:<br><textarea type="text" id="comment" name="comment" placeholder="Tell us about it..."></textarea></label>
+                    <div class="form-group">
+                        <label for="formControlRange" id="rangelabel">How happy are you with this website?<br></label>
+                        <label for="formControlRange">1<input type="range" min="1" max="10" value="5"class="slider" id="formControlRange">10</label>
+                      </div>
+                    <div class="row">
+                <input class="submit" type="submit"id="button">
+            </div>
+           </div>
+          </fieldset>
+         </form>
+        </div>
+        <div class="pa">
+            <p style="width:100%;padding-bottom:1em;"><br>Katie Chang 2020</p>
+        </div>
+    </footer>
+</body>
+</html>

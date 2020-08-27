@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+#mainpic{
+    width: 100%;
+}
+label{
+    margin-bottom:3em;
+    margin-right: 1em;
+}
+.submit{
+    border:none;
+    height:2em;
+    border-radius:10%;
+}
+h1,h2, p{
+    margin-left: 1em;
+}
+.row{
+    padding-bottom:1em;
+}
+nav{
+    background-color: rgb(191, 222, 224);
+    padding:.5em;
+    color: rgb(132, 168, 204);
+}
+.pa{
+    padding:1em;
+    width: 100%;
+    clear:both;
+}
+a{text-decoration: none;
+    color: rgb(27, 165, 184);
+}
+a:hover{
+    color:rgb(131, 194, 155);
+}
+h1{
+    color:rgb(93, 175, 185);
+    font-family: 'Assistant', sans-serif;
+}
+h2{
+    color: rgb(131, 194, 155);
+    font-family: 'Assistant', sans-serif;
+}
+#nav{
+    color: rgb(239, 251, 255);
+    transition-duration: 1s;
+    font-family: 'Chelsea Market', cursive;
+}
+#nav:hover{
+    color:rgb(124, 185, 189);
+    animation-name: link;
+    animation-duration: 75ms;
+    animation-iteration-count: 1;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+}
+#nav:active{
+    border-bottom-width: 2px;
+    transition-duration: 0s;
+    color:rgb(165, 178, 194);
+}
+p{
+    font-family: arial;
+    line-height: 140%;
+}
+.rangelabel{
+    width:100%;
+}
+input {
+    position: relative;
+}
+label{
+    font-family:arial;
+}
+form{
+    font-size: 1em;
+    clear:right;
+}
+textarea{
+    width:55%; 
+    height:5em;
+}
+li{
+    list-style-type: none
+}
+.credit{
+    text-decoration: none;
+    line-height: 2em;
+    font-size: 1em;
+    float:left;
+    width:25%;
+}
+.article{
+    width:100%;
+}
+.stuff{
+    text-decoration: none;
+    line-height: 2em;
+    font-size: 1em;
+    float:left;
+    width:40%;
+}
+footer{
+    color: rgb(27, 165, 184);
+    background-color:rgb(186, 218, 233);
+}
+fieldset{
+    background-color:white;
+}
+.nav{
+    display:inline;
+    text-decoration:none;
+    list-style-type: inline;
+    padding:1.7em;
+    font-size: 1.3em;
+}
+legend{
+    color:black;
+    font-family: 'Zilla Slab', serif;
+    font-size:1.5em;
+}
+input [type=submit]{
+    border:none;
+}
+article{
+    width:50%;
+}
+@media screen and (max-width:1200px){
+    .nav{
+        text-decoration: none;
+        font-size: 1em;
+        padding:0 auto;
+     }
+     #mainpic{
+         width:50%;
+        }
+        main{
+            align-content: center;
+        }
+     .fqaimg{
+         width:100%;
+         float:right;
+     }
+     article{
+         width:100%;
+         padding:2em;
+         padding-left:0;
+         padding-top: 0;
+     }
+}
+@media screen and (max-width: 980px){
+    #form {
+       margin:auto; 
+       flex-flow:column wrap;
+       width:100%;
+    }
+    .fqaimg{
+        width:95%;
+    }
+    label, .p {
+        font-size: .8em;
+        width:100%;
+    }
+    input[type=range], input[type=submit]{
+        width:50%;
+        margin-left: 1em;
+    }
+    input[type=text], textarea {
+        margin:0 auto;
+        width:100%;
+    }
+    #form{
+        width: 100%;
+    }
+    form{
+        clear:right;
+    }
+    .credit{
+        width: 50%;
+    }
+    .stuff{
+        width: 50%;
+    }
+    .nav{
+        text-decoration: none;
+        font-size: .8em;
+        margin:0;
+        padding:.4em;
+    }
+     p, h1, h2,article,div{
+         width:100%;
+     }
+     h1, h2 {
+         font-size: 1.5em;
+     }
+     p{
+         font-size:.7em;
+     }
+}
+@media screen and (max-width:920px){
+    #mainpic{
+        width:100%;
+    }
+}
+@media screen and (max-width:800px){
+    .nav {
+        font-size:.8em;
+        padding:.2em;
+    }
+    div, article, main{
+        width:100%;
+    }
+    p{
+        padding:1em;
+        width:100%;
+    }
+}
+@media screen and (max-width: 500px){
+    #form{
+        width: 100%;
+    }
+    .nav{
+        float:left;
+        width:100%;
+        list-style-type: none;
+        line-height: none;
+        padding-bottom:1em;
+        background-color: rgb(191, 222, 224);
+    }
+    h1{
+        font-size:1em;
+    }
+    .credit{
+        width: 100%;
+    }
+    legend{
+        font-size: 1em;
+    }
+    .stuff{
+        width: 100%;
+        margin:0 auto;
+    }
+    .pa{
+        width:100%;
+        padding:1em;
+    }
+   .fqaimg{
+       width:95%;
+   }
+   .nav{
+       padding:1em;
+        margin:0;
+        padding-bottom:.5em;
+   }
+   h1,h2{
+       font-size: 1em;
+   }
+
+p{
+    padding:1em;
+    width:100%;
+}
+nav{
+    background-color: white;
+}
+}
+
+@keyframes link {
+    0% {border-bottom-width: 0px}
+    100% {border-bottom-width: 3px;}         
+ }
